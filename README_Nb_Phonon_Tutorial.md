@@ -249,7 +249,7 @@ echo "${ALAT}  $(grep 'total energy' eos_${ALAT}.out | tail -1)"
 done
 ```
 
-![Phonon Dispersion](results/eos/eos_fit.png)
+
 
 ### EOS fit script: `fit_eos.py`
 
@@ -311,7 +311,7 @@ print(f"celldm = {a0_ang / BOHR_TO_ANG:.4f} Bohr")
 **Use `celldm(1) = 6.2521` in all subsequent calculations.**
 
 ---
-
+![Phonon Dispersion](results/eos/eos_fit.png)
 ## 5. SCF Calculation
 
 ### Input file: `results/phonon/Nb_scf.in`
@@ -525,12 +525,13 @@ matdyn.x < results_4x4x4/phonon/Nb_dos.in \
 ```
 
 ---
-
+![Phonon Dispersion](results_4x4x4/phonon/Nb_phonon_dispersion.png)
 ### Step 5 — Plot dispersion
 
 ```bash
 python3 plot_phonon.py
 ```
+
 
 ---
 
@@ -675,7 +676,8 @@ Nb_branch_dos_fit.png      ← linear fit + bar chart at 1 THz
 ```
 
 ---
-
+![Phonon Dispersion](results_4x4x4/phonon/Nb_branch_dos_clean.png)
+![Phonon Dispersion](results_4x4x4/phonon/Nb_branch_dos_fit.png)
 ## 10. ROOT Plotting
 
 ### Run
@@ -703,7 +705,7 @@ Files:    Nb_DOS_full.pdf, Nb_DOS_fractional.pdf
 ```
 
 ---
-
+![Phonon Dispersion](Nb_DOS.png)
 ## 11. Known Issues & Fixes
 
 ### Issue 1 — vc-relax fails for BCC
