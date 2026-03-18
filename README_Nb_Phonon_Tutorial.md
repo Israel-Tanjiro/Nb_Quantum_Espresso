@@ -249,6 +249,8 @@ echo "${ALAT}  $(grep 'total energy' eos_${ALAT}.out | tail -1)"
 done
 ```
 
+![Phonon Dispersion](results/eos/eos_fit.png)
+
 ### EOS fit script: `fit_eos.py`
 
 ```python
