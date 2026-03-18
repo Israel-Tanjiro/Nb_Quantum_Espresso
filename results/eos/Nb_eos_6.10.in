@@ -1,0 +1,29 @@
+&CONTROL
+  calculation   = 'scf'
+  prefix        = 'Nb_eos_6.10'
+  outdir        = './tmp'
+  pseudo_dir    = './pseudo'
+/
+&SYSTEM
+  ibrav         = 3
+  celldm(1)     = 6.10
+  nat           = 1
+  ntyp          = 1
+  ecutwfc       = 70
+  ecutrho       = 560
+  occupations   = 'smearing'
+  smearing      = 'marzari-vanderbilt'
+  degauss       = 0.03
+/
+&ELECTRONS
+  conv_thr      = 1.0d-10
+  mixing_beta   = 0.4
+  mixing_mode   = 'plain'
+  electron_maxstep = 200
+/
+ATOMIC_SPECIES
+  Nb  92.906  nb_pbe_v1.uspp.F.UPF
+ATOMIC_POSITIONS {alat}
+  Nb  0.0  0.0  0.0
+K_POINTS {automatic}
+  16 16 16  0 0 0

@@ -1,0 +1,13 @@
+Phonon dispersion for Nb BCC - Publication 4x4x4
+ &INPUTPH
+  prefix       = 'Nb'
+  outdir       = './tmp'
+  fildyn       = 'results_4x4x4/phonon/Nb.dyn'
+  ldisp        = .true.
+  nq1          = 4
+  nq2          = 4
+  nq3          = 4
+  tr2_ph       = 1.0d-14
+  alpha_mix(1) = 0.3
+  recover      = .false.
+ /

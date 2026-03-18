@@ -1,0 +1,5 @@
+ &INPUT
+  fildyn  = 'results_4x4x4/phonon/Nb.dyn'
+  zasr    = 'crystal'
+  flfrc   = 'results_4x4x4/phonon/Nb.fc'
+ /

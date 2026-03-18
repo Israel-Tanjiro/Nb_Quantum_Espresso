@@ -1,0 +1,15 @@
+ &INPUT
+  asr      = 'crystal'
+  flfrc    = 'results/phonon/Nb.fc'
+  flfrq    = 'results/phonon/Nb.freq'
+  flvec    = 'results/phonon/Nb.modes'
+  fleig    = 'results/phonon/Nb.eig'
+  q_in_band_form = .true.
+  dos      = .false.
+ /
+5
+  0.000  0.000  0.000  40
+  1.000  0.000  0.000  30
+  0.500  0.500  0.500  30
+  0.000  0.000  0.000  40
+  0.000  1.000  0.000   1

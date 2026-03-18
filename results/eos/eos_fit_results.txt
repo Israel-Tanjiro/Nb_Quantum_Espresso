@@ -1,0 +1,12 @@
+BIRCH-MURNAGHAN EOS FIT RESULTS FOR Nb
+==================================================
+E0        = -117.93226894 Ry
+V0        = 18.4450 Ang^3
+a0        = 3.328915 Angstrom
+celldm(1) = 6.290741 Bohr
+B0        = 499.99 GPa
+B0'       = 7.000
+==================================================
+
+USE THIS IN ALL QE INPUTS:
+  celldm(1) = 6.29074

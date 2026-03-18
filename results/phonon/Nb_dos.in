@@ -1,0 +1,11 @@
+ &INPUT
+  asr    = 'crystal'
+  flfrc  = 'results/phonon/Nb.fc'
+  flfrq  = 'results/phonon/Nb_dos.freq'
+  dos    = .true.
+  fldos  = 'results/phonon/Nb.dos'
+  nk1    = 20
+  nk2    = 20
+  nk3    = 20
+  deltaE = 1.0
+ /

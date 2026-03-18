@@ -1,0 +1,13 @@
+Phonon calculation for Nb BCC
+ &INPUTPH
+  prefix       = 'Nb'
+  outdir       = './tmp'
+  fildyn       = 'results/phonon/Nb.dyn'
+  ldisp        = .true.
+  nq1          = 2
+  nq2          = 2
+  nq3          = 2
+  tr2_ph       = 1.0d-14
+  alpha_mix(1) = 0.3
+  recover      = .true.
+/

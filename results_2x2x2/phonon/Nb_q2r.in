@@ -1,0 +1,5 @@
+ &INPUT
+  fildyn  = 'results/phonon/Nb.dyn'
+  zasr    = 'crystal'
+  flfrc   = 'results/phonon/Nb.fc'
+ /

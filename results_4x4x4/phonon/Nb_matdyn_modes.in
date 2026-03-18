@@ -1,0 +1,13 @@
+ &INPUT
+  asr            = 'crystal'
+  flfrc          = 'results_4x4x4/phonon/Nb.fc'
+  flfrq          = 'results_4x4x4/phonon/Nb_modes.freq'
+  flvec          = 'results_4x4x4/phonon/Nb.modes'
+  q_in_band_form = .false.
+  dos            = .true.
+  fldos          = 'results_4x4x4/phonon/Nb_branch.dos'
+  nk1            = 50
+  nk2            = 50
+  nk3            = 50
+  deltaE         = 0.5
+ /

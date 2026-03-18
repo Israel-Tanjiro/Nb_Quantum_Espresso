@@ -1,0 +1,39 @@
+&CONTROL
+  calculation   = 'vc-relax'
+  prefix        = 'Nb_vcrelax'
+  outdir        = '../../tmp'
+  pseudo_dir    = '../../pseudo'
+  forc_conv_thr = 1.0d-4
+  etot_conv_thr = 1.0d-6
+/
+&SYSTEM
+  ibrav         = 3
+  celldm(1)     = 6.235
+  nat           = 1
+  ntyp          = 1
+  ecutwfc       = 70
+  ecutrho       = 560
+  occupations   = 'smearing'
+  smearing      = 'marzari-vanderbilt'
+  degauss       = 0.03
+/
+&ELECTRONS
+  conv_thr      = 1.0d-10
+  mixing_beta   = 0.7
+/
+&IONS
+  ion_dynamics  = 'damp'
+/
+&CELL
+  cell_dynamics  = 'damp-w'
+  press          = 0.0
+  press_conv_thr = 0.5
+  cell_dofree    = 'ibrav'
+  wmass          = 0.02
+/
+ATOMIC_SPECIES
+  Nb  92.906  nb_pbe_v1.uspp.F.UPF
+ATOMIC_POSITIONS {alat}
+  Nb  0.0  0.0  0.0
+K_POINTS {automatic}
+  16 16 16  0 0 0
